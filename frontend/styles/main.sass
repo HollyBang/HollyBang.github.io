@@ -1,0 +1,164 @@
+$headerColor: #8cc34b;
+$headerFontColor: rgba(255, 255, 255, 0.5);
+$maxWidth: 1200px;
+
+$share-social: '.wrapper__share_social';
+$share-social-hover: '.wrapper__share_social:active, .wrapper__share_social:hover';
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&subset=cyrillic')
+@import sprite
+
+html
+	min-height: 100%
+	width: 100%;
+	min-width: 1200px
+	position: relative
+body
+	height: 100%	
+	min-width: 1200px
+	margin: 0
+	padding: 0
+	font-family: 'Fira Sans', sans-serif
+
+
+.header
+	width: 100%
+	background-color: $headerColor
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
+	padding-left: 0px
+.wrapper
+	max-width: $maxWidth
+	height: 90px
+	margin: 0 auto
+
+.wrapper__leftside_logo
+	width: 60px
+	height: 59px
+	border-radius: 50%
+	background-color: red
+	float: left
+	margin-top: 15px
+	margin-left: 29px
+
+
+.wrapper__leftside_privat-info
+	margin-left: 20px
+	float: left
+	.myname
+		margin-bottom: 0
+		color: $headerFontColor
+		font-size: 20.96px
+		font-weight: 500;
+		line-height: 25px
+		text-align: left
+	.mymail
+		margin: 0
+		color: $headerFontColor
+		font-size: 13.97px
+		font-weight: 400;
+		line-height: 28px
+		text-align: left
+		
+.wrapper__share
+	float: right
+	margin-top: 30px
+	.social-vk
+		position: relative
+		top: -5px
+	.wrapper__share_social
+		display: inline-block
+		width: 30px
+		height: 31px
+		margin-right: 20px
+		&:nth-last-child(1)
+			margin-right: 30px
+	#{$share-social}
+		fill: rgba(255, 255, 255, 0.5)
+	#{$share-social-hover}
+		fill: rgba(255, 255, 255, 0.9)
+
+
+//block for me
+
+.about-me
+	width: 100%
+	background-color: #ffffff
+	.about-me__tit
+		margin: 75px auto
+		width: 920px
+		h1,p
+			margin: 0
+			text-align: center
+			color: #212121
+		h1
+			margin-bottom: 19px
+			font-size: 42px
+			font-weight: 500
+		p
+			margin-bottom: 40px	
+			color:  #727272
+			font-size: 21px
+			font-weight: 300
+
+.about-me__items
+	padding: 0
+	display: flex
+	justify-content: center
+.infoblock
+	width: 436px
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around;
+	.image
+		width: 140px
+		height: 137px
+	.text
+		width: 275px
+		h2
+			margin: 0 0 19px 0
+			color: #212121
+			font-size: 21px
+			font-weight: 400
+			text-align: center
+		p
+			color: #727272
+			font-size: 14px
+			font-weight: 300
+			text-align: left
+.infoblock__info-left
+	margin-right: 35px
+.image_hello
+	@include sprite($hello)
+.image_exp
+	@include sprite($experience)
+// FOOTER
+
+.footer
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	background-color: #212121
+	.wrapper__footer
+		max-width: $maxWidth
+		height: 72px
+		margin: 0 auto
+		.footer__text
+			margin-top: 0
+			padding-top: 19px
+			color:  $headerFontColor
+			font-size: 13.99px
+			font-weight: 400
+			line-height: 21px
+			text-align: center
+
+
+
+//CLEARFIX 
+
+// .clearfix:after
+//   content: ""
+//   display: table
+//   clear: both
+
