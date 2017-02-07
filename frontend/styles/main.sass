@@ -1,6 +1,7 @@
 $headerColor: #8cc34b;
 $headerFontColor: rgba(255, 255, 255, 0.5);
 $maxWidth: 1200px;
+$colorCheck: #f6f7f2;
 
 $share-social: '.wrapper__share_social';
 $share-social-hover: '.wrapper__share_social:active, .wrapper__share_social:hover';
@@ -28,7 +29,7 @@ body
 	background-color: $headerColor
 	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
 	padding-left: 0px
-.wrapper
+.header__wrapper
 	max-width: $maxWidth
 	height: 90px
 	margin: 0 auto
@@ -50,14 +51,14 @@ body
 		margin-bottom: 0
 		color: $headerFontColor
 		font-size: 20.96px
-		font-weight: 500;
+		font-weight: 500
 		line-height: 25px
 		text-align: left
 	.mymail
 		margin: 0
 		color: $headerFontColor
 		font-size: 13.97px
-		font-weight: 400;
+		font-weight: 400
 		line-height: 28px
 		text-align: left
 		
@@ -110,7 +111,7 @@ body
 	width: 436px
 	display: flex
 	flex-flow: row wrap
-	justify-content: space-around;
+	justify-content: space-around
 	.image
 		width: 140px
 		height: 137px
@@ -127,6 +128,9 @@ body
 			cursor: pointer
 			background-color: #eee
 			transition: 0.4s
+			-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
 			&:hover,
 			&.active
 				background-color: #ddd
@@ -154,6 +158,87 @@ body
 	@include sprite($hello)
 .image_exp
 	@include sprite($experience)
+
+.portfolio
+	width: 100%
+	background: #f6f7f2
+	padding-top: 20px
+	h2
+		color: #212121
+		font-size: 42px
+		font-weight: 500
+		text-align: center
+	p
+		color: #727272
+		font-weight: 300
+		font-size: 21px
+		text-align: center
+	.portfolio__wrapper
+		display: flex
+		flex-flow: wrap row
+		justify-content: space-between
+		min-width: 400px 
+		max-width: 1199px
+		margin: 0 auto
+		margin-bottom: 100px
+
+.wrapper__items
+	width: 300px
+	margin-bottom: 69px
+	background: #fff
+	box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.33)
+	-webkit-box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.33)
+	-moz-box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.33)
+	h3, p
+		padding: 0 20px 0 20px
+	h3
+		font-size: 21px
+		font-weight: 400
+		text-align: left
+		color: #212121
+	p
+		color:  #727272
+		font-weight: 300
+		text-align: left
+	&:hover .portfolio__image
+		border-bottom: 6px solid $headerColor
+	&:hover h3
+		color: $headerColor
+	.portfolio__image
+		width: 300px
+		height: 170px
+		box-sizing: border-box
+		border-bottom: 2px solid transparent
+	.check
+		background: $colorCheck
+		height: 59px
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		.check__checkbox
+			display: none
+			&:checked ~ .check__checkbox-custom::before
+				content: ""
+				display: block
+				position: absolute
+				top: 1px
+				left: 1px
+				@include sprite($checkbox)
+				border-radius: 2px
+			&:checked ~ .check__label
+				color: $headerColor
+		.check__checkbox-custom
+			position: relative
+			width: 22px
+			height: 22px
+			border: 2px solid #ccc
+			border-radius: 3px
+		.check__checkbox-custom, .check__label
+			margin-top: 20px
+			margin-left: 20px
+			display: inline-block
+			vertical-align: middle
+
 // FOOTER
 
 .footer

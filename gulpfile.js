@@ -29,7 +29,7 @@ gulp.task('sprite', function () {
   var spriteData = gulp.src('frontend/assets/img/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: '_sprite.sass',
-    padding: 5
+    padding: 10
   }));
   return spriteData.pipe(gulp.dest('public/image/'));
 });
