@@ -1,3 +1,5 @@
+
+// почти аккордион =)
 var acc = document.getElementsByClassName("text__accordion");
 var i;
 

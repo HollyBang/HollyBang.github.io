@@ -7,11 +7,15 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="public/styles/font-awesome.min.css">
 	<link rel="stylesheet" href="public/styles/normalize.css">
 	<link rel="stylesheet" href="public/styles/main.css">
+	
 	<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="public/scripts/hideBlock.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="public/scripts/myjquery.js"></script>
+
 	
 </head>
 <body>
@@ -96,7 +100,7 @@
 
 	<div class="portfolio">
 		<h2>Портфолио</h2>
-		<p>Работы на которые можно посмотреть</p>
+		<p class="portfolio__titul-text">Работы на которые можно посмотреть</p>
 		<div class="portfolio__wrapper">
 			<div class="wrapper__items wrapper__items_item1">
 				<div class="portfolio__image item_image1"></div>
@@ -172,7 +176,9 @@
 			</div>
 		</div>
 	</div>
-
+	<div id="scroller-top">
+		<i class="fa fa-arrow-circle-o-up fa-4x" aria-hidden="true"></i>
+	</div>
 	<footer class="footer">
 		<div class="wrapper__footer">
 			<p class="footer__text">А этот футер прибит к низу окна браузера,<br>не зависимо от количества контента на странице и размера окна. =) Потом че нить умное напишу.</p>
