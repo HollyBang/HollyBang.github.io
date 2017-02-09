@@ -28,11 +28,11 @@ body
 	width: 100%
 	background-color: $headerColor
 	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
-	padding-left: 0px
+	margin-bottom: 75px
 .header__wrapper
 	max-width: $maxWidth
 	height: 90px
-	margin: 0 auto
+	margin: 0 auto 
 
 .wrapper__leftside_logo
 	width: 60px
@@ -87,7 +87,7 @@ body
 	width: 100%
 	background-color: #ffffff
 	.about-me__tit
-		margin: 75px auto
+		margin: 0 auto 76px
 		width: 920px
 		h1,p
 			margin: 0
@@ -98,7 +98,6 @@ body
 			font-size: 42px
 			font-weight: 500
 		p
-			margin-bottom: 40px	
 			color:  #727272
 			font-size: 21px
 			font-weight: 300
@@ -120,7 +119,7 @@ body
 		.text__accordion
 			display: block
 			border-radius: 10px
-			margin: 0 0 19px 0
+			
 			color: #212121
 			font-size: 21px
 			font-weight: 400
@@ -164,7 +163,6 @@ body
 .portfolio
 	width: 100%
 	background: #f6f7f2 url("../image/bg.png") repeat
-	padding-top: 20px
 	h2
 		color: #212121
 		font-size: 42px
@@ -177,12 +175,13 @@ body
 		text-align: center
 	.portfolio__wrapper
 		display: flex
+		align-items: flex-start
 		flex-flow: wrap row
 		justify-content: space-around
 		min-width: 400px 
 		max-width: 1199px
 		margin: 0 auto
-		margin-bottom: 100px
+		margin-bottom: 90px
 
 .wrapper__items
 	width: 300px
@@ -303,7 +302,7 @@ body
 	background-color: #212121
 	.wrapper__footer
 		max-width: $maxWidth
-		height: 72px
+		min-height: 72px
 		margin: 0 auto
 		.footer__text
 			margin-top: 0
@@ -318,8 +317,8 @@ body
 
 //CLEARFIX 
 
-// .clearfix:after
-//   content: ""
-//   display: table
-//   clear: both
+.clearfix:before
+	content: ""
+	display: table
+	clear: both
 
