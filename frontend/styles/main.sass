@@ -14,10 +14,12 @@ html
 	min-height: 100%
 	width: 100%;
 	min-width: 1200px
-	position: relative
 body
+	display: flex
+	flex-direction: column
 	height: 100%	
 	min-width: 1200px
+	min-height: 100vh
 	margin: 0
 	padding: 0
 	font-family: 'Fira Sans', sans-serif
@@ -161,6 +163,7 @@ body
 	@include sprite($experience)
 
 .portfolio
+	flex-grow: 1
 	width: 100%
 	background: #f6f7f2 url("../image/bg.png") repeat
 	h2
@@ -295,9 +298,7 @@ body
 .fa
 	color: $headerColor
 .footer
-	position: absolute
-	left: 0
-	bottom: 0
+	flex-shrink: 0
 	width: 100%
 	background-color: #212121
 	.wrapper__footer
@@ -322,3 +323,4 @@ body
 	display: table
 	clear: both
 
+@import mediaQueries
