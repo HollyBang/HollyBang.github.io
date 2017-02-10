@@ -1,8 +1,28 @@
 
 
 
-// @media screen and (min-width: 320px)
-// 	html
-// 		min-width: 320px
-// 	.header__wrapper
-// 		max-width: 320px
+@media screen and (min-width: 320px) and (max-width : 768px)
+	.wrapper__leftside
+		width: 300px
+		height: 80px
+		clear: both
+		margin-left: 50%
+		transform: translateX(-50%)
+	.wrapper__leftside_privat-info
+		.myname
+			font-size: 13.96px
+	.wrapper__share
+		width: 150px
+		clear: both
+		float: left
+		margin-left: 50%
+		transform: translateX(-50%)
+		.wrapper__share_social
+			&:nth-last-child(1)
+				margin-right: 0px
+				
+		
+
+
+
+
