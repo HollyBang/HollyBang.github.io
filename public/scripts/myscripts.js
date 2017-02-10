@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	var count = 0;
 	var allCheck = $("[name='checkbox-test']").length;
 	
@@ -8,6 +9,7 @@ $(document).ready(function(){
 		count++;
 		if(count==allCheck){
 			$(".portfolio__titul-text").text("Надеюсь перед тем как все позакрывать, вы действительно посмотрели работы))");
+			//надо сделать кнопку ресета
 		}
 	});
 
