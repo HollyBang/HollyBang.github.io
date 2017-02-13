@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$(this).closest('div.wrapper__items').effect('drop').fadeOut(400); 
 		count++;
 		if(count==allCheck){
-			$(".portfolio__titul-text").text("Надеюсь перед тем как все позакрывать, вы действительно посмотрели работы))");
+			$(".portfolio__titul-text").text("Надеюсь перед тем как все закрыть, вы действительно посмотрели работы))");
 			//надо сделать кнопку ресета
 		}
 	});
@@ -27,6 +27,52 @@ $(document).ready(function(){
 			} 
 		}
 	}
+	
+
+
+
+	var heightBlock = 150;
+	$(document).on('click', function (ev) {
+
+		var container = $('.items__text');
+		var target = $(ev.target);
+
+		if (target.hasClass('items__text')) {
+			var height = target.height();
+			target.css({
+				'height': 'auto'
+			});
+			var realHeight = target.outerHeight(false);
+
+			target.css({
+				'height': height
+			});
+
+			if (height == heightBlock && realHeight > heightBlock) {
+				target.addClass('background-change');
+				target.animate({
+					height: realHeight
+				}, 600);
+
+			} else {
+				target.removeClass('background-change');
+				target.animate({
+					height: heightBlock
+				}, 400);
+
+			};
+
+		} else if (!$(target).hasClass(".items__text")) {
+			container.removeClass('background-change');
+				container.animate({
+					height: heightBlock
+				}, 400);
+		};
+
+		
+	});
+
+	
 
 
 	// кнопочка на верх
