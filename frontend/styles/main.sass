@@ -41,11 +41,16 @@ body
 	width: 60px
 	height: 59px
 	border-radius: 50%
-	background-color: red
+	overflow: hidden
 	float: left
 	margin-top: 15px
 	margin-left: 29px
 	margin-bottom: 15px
+	border: 1px solid $headerFontColor
+	.logo
+		display: block
+		width: 100%
+		border-radius: 50%
 
 
 .wrapper__leftside_privat-info
@@ -106,6 +111,7 @@ body
 			color:  #727272
 			font-size: 21px
 			font-weight: 300
+			margin-bottom: 20px
 
 .about-me__items
 	padding: 0
@@ -204,11 +210,27 @@ body
 		font-weight: 400
 		text-align: left
 		color: #212121
-	p
+	.items__text
+		display: block
+		height: 150px
+		overflow: hidden
+		position: relative
 		color:  #727272
 		font-weight: 300
 		text-align: left
 		line-height: 21px
+		margin-bottom: 0
+		pointer-events: none
+		&:after
+			content: " "
+			display: block
+			position: absolute
+			height: 35px
+			right: 0
+			bottom: 0
+			left: 0
+			background: linear-gradient(rgba(255,255,255,0),#fff)
+			pointer-events: all
 	&:hover .portfolio__image::before,
 	&:hover .portfolio__image::after
 		width: 100%
@@ -276,6 +298,18 @@ body
 			display: inline-block
 			vertical-align: middle
 
+
+.items__text.background-change
+	&:after
+		content: " "
+		display: block
+		position: absolute
+		height: 30px
+		right: 0
+		bottom: 0
+		left: 0
+		background: none
+
 .item_image1
 	@include sprite($js)
 .item_image2
@@ -318,7 +352,6 @@ body
 			font-weight: 400
 			line-height: 21px
 			text-align: center
-
 
 
 //CLEARFIX 
