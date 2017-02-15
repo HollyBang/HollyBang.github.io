@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="author" content="Ndrey Bar">
 	<meta property="og:image" content="public/image/foto.png" />
@@ -12,6 +13,7 @@
 	<link rel="stylesheet" href="public/styles/normalize.css">
 	<link rel="stylesheet" href="public/styles/main.css">
 	
+
 	<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -26,14 +28,27 @@
 		<h1>Отправить мне сообщение</h1>
 		<small>ps. На git pages это сделать нельзя(</small>
 
-		<form action="#">
-			<input placeholder="Имя" type="text" required />
-			<input placeholder="Электронная почта" type="email" required />
-			<input placeholder="Тема" type="text" required />
-			<textarea placeholder="Комментарий"></textarea>
-			<input class="formBtn" type="submit" value="Отправить" />
-			<input class="formBtn" type="reset" value="Сбросить" />
-		</form>
+		<form class="form animate-form" id="form" onsubmit="return false;">
+        <div class="form-group has-feedback">
+          <label class="control-label sr-only" for="username">Username</label>
+          
+          <input class="form-control" placeholder="Имя" type="text" id="username" name="username" >
+          
+        </div>
+        <div class="form-group has-feedback">
+          <label class="control-label sr-only" for="email">Email address</label>
+          
+          <input class="form-control" id="email" name="email" placeholder="Электронная почта" type="text" >
+          
+        </div>
+        <textarea placeholder="Комментарий"></textarea>
+        
+          <input class="formBtn" type="submit" value="Отправить">
+        
+        
+        <input class="formBtn" type="reset" value="Сбросить" />
+        
+      </form>
 	</div>
 	<header class="header">
 		<div class="header__wrapper">
@@ -200,30 +215,12 @@
 
 	<footer class="footer">
 		<div class="wrapper__footer">
-			<p class="footer__text">А этот футер прибит к низу окна браузера,<br>не зависимо от количества контента на странице и размера окна. =) Потом че нить умное напишу.</p>
+			<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus magnam, <br>obcaecati ullam optio qui culpa hic, adipisci omnis. Ex, provident.</p>
 		</div>
 	</footer>
 
-	<script type="text/javascript">
-		$(function() {
+	
 
-  // contact form animations
-  $('#contact').click(function() {
-  	$('#contactForm').fadeToggle();
-  	$('.bg_layer').show();
-  })
-  $(document).mouseup(function (e) {
-  	var container = $("#contactForm");
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-    	container.fadeOut();
-    	$('.bg_layer').fadeOut();
-    }
-});
-  
-});
-</script>
+	<script src="public/scripts/jquery.validation.js"></script>
 </body>
 </html>
