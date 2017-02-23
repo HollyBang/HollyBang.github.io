@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cherry+Swash');
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 
+body {
+	width: 100%;
+    min-width: 520px;
+}
 .navbar-default {
 	background-color: #efc34a;
 	border-color: #e7e7e7;
