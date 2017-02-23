@@ -1,0 +1,68 @@
+
+.container-fluid {
+    background: #fbf4e0;
+    margin: 0 auto;
+    padding: 20px 0px;
+    max-width: 960px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control {
+    top: -32%;
+}
+.carousel-control {
+    bottom: -20px;
+}
+.foto_callback {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.foto_callback::after {
+    content: "";
+    float: right;
+    display: block;
+    width: 20px;
+    height: 54px;
+    border-right: 2px dotted #efc34a;
+}
+
+.recall{
+    padding: 100px;
+    background-color: #efc34a;
+    background: rgba(235,190,176,1);
+    background: -moz-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,190,176,1)), color-stop(35%, rgba(252,203,69,1)), color-stop(69%, rgba(238,191,63,1)), color-stop(100%, rgba(235,190,176,1)));
+    background: -webkit-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+    background: -o-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+    background: -ms-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+    background: linear-gradient(to right, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebbeb0', endColorstr='#ebbeb0', GradientType=1 );
+}
+}
+
+.foto_callback img {
+        float: left;
+    margin-right: 20px;
+}
+.foto-person {
+    border-radius: 50%;
+}
+.names {
+     float: left;
+}
+.names h3 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    word-wrap: normal;
+}
+.names p {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+}

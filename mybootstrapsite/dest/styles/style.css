@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+.navbar-default {
+	background-color: #efc34a;
+	border-color: #e7e7e7;
+	background: rgba(235,190,176,1);
+	background: -moz-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,190,176,1)), color-stop(35%, rgba(252,203,69,1)), color-stop(69%, rgba(238,191,63,1)), color-stop(100%, rgba(235,190,176,1)));
+	background: -webkit-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -o-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -ms-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: linear-gradient(to right, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebbeb0', endColorstr='#ebbeb0', GradientType=1 );
+}
+.mycontainer {
+	margin-bottom: 25px;
+}
+
+.navbar-brand {
+	font-family: 'Cherry Swash', cursive, sans-serif;
+	color:  rgba(255, 255, 255, 0.06);
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: left;
+}
+.navbar-nav > li > a {
+	font-family: 'Droid Sans', sans-serif; 
+	line-height: 20px;
+	font-size: 18px;
+}
+.navbar {
+	margin-bottom: 1px;
+}
+
+.img-circle {
+
+}
+
+.marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
+}
+.marketing__title,
+.marketing__disc{
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.marketing__title {
+	color:  #4c505d;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 49px;
+}
+.marketing__disc{
+	color:  #4c505d;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.content-container{
+	width: 100%; 
+	height: 600px;  
+	position: relative;
+}
+.form {
+	position: absolute;
+	background-color: white;
+	border: 4px solid #efc34a;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	top: 180px;
+	left: 2%;
+	opacity: 0.8;
+}
+.myform {
+	position: absolute;
+	top:50px;
+	left: 98px;
+}
+.form-control {
+	width: 200px;
+	margin-bottom: 10px;
+}
+.myform textarea {
+	resize: none;
+}
+
+.button{
+	background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+	background-image: linear-gradient(top, #f4f1ee, #fff);
+	border-radius: 50%;
+	box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+	float:left;
+	height: 70px;
+	margin: 20px 60px;
+	position: relative;
+	width: 70px;			
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.button:after{
+	color:#e9e6e4;
+	content: "";
+	display: block;
+	font-size: 30px;
+	height: 30px;
+	text-decoration: none;
+	text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+	position: absolute;
+	width: 0px;
+}
+.tick:after{
+	content: "✔";
+	left:23px;
+	top:15px;
+}
+
+
+
+.button:hover{
+	background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+	background-image: linear-gradient(top, #fff, #f4f1ee);
+	color:#0088cc;
+}
+.tick:hover:after{
+	color:#83d244;
+	text-shadow:0px 0px 6px #83d244;
+}
+
+
+
+.button:active{
+	background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+	background-image: linear-gradient(top, #efedec, #f7f4f4);
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+.button:active:after{
+	color:#dbd2d2;
+	text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
+
+
+.footer {
+	background-color: #efc34a;
+	background: rgba(235,190,176,1);
+	background: -moz-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,190,176,1)), color-stop(35%, rgba(252,203,69,1)), color-stop(69%, rgba(238,191,63,1)), color-stop(100%, rgba(235,190,176,1)));
+	background: -webkit-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -o-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: -ms-linear-gradient(left, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	background: linear-gradient(to right, rgba(235,190,176,1) 0%, rgba(252,203,69,1) 35%, rgba(238,191,63,1) 69%, rgba(235,190,176,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebbeb0', endColorstr='#ebbeb0', GradientType=1 );
+}
+.footer p {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+	.form {
+		width: 300px;
+		height: 300px;
+		top: 300px;
+	}
+	.myform {
+		top:40px;
+		left: 46px;
+	}
+	.button{
+		height: 40px;
+		margin: -5px 80px;
+		position: relative;
+		width: 40px;			
+	}
+	.tick:after{
+		content: "✔";
+		left:8px;
+		top:0px;
+	}
+
+
+}
