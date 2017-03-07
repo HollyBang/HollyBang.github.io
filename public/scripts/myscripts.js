@@ -91,57 +91,6 @@ $(document).ready(function(){
 	});
 
 //валидация формы
-// $("#form").validate({
-// 	rules: {
-// 		username: {
-// 			minlength: 0,
-// 			maxlength: 20,
-// 			required: true
-// 		},
-// 		email: {
-// 			email: true,
-// 			required: true
-// 		}
-
-// 	},
-// 	messages: {
-// 		username: {
-// 			email: "",
-// 			required: ""
-// 		},
-// 		email: {
-// 			email: "",
-// 			required: ""
-// 		}
-// 	},
-// 	highlight: function(element) {
-//       $(element).closest(".form-control").removeClass("has-success").addClass("has-error").parents('form.animate-form').addClass("animateShake");
-//     },
-//     unhighlight: function(element) {
-//       $(element).closest(".form-control").removeClass("has-error").addClass("has-success");
-//     }
-//   });
-
-  // $('.submit input').click(function() {
-  //   $('#form.animated').removeClass('animateShake');
-  //   if ($("#form").valid()) {
-  //     $("#form").addClass("success");
-  //   } else {
-  //     $("#form").removeClass("success").addClass("invalid");
-  //     $(this).addClass("disabled");
-  //   }
-
-  //   $("#form.invalid input").on("keyup blur", function() {
-  //     if ($("#form").valid()) {
-  //       $(".submit input").removeClass("disabled");
-  //       $("#form").removeClass("invalid");
-  //     } else {
-  //       $(".submit input").addClass("disabled");
-  //     }
-  //   });
-  // });
-});
-
 //модальное окно
 $(function() {
 
@@ -196,6 +145,9 @@ $(function() {
 	});
 
 });
+
+});
+
 
 
 // $(element).closest(".form").addClass("animateShake");
