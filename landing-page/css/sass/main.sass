@@ -1,0 +1,513 @@
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Griffy|Roboto');
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Baloo Bhaina', cursive;
+// font-family: 'Griffy', cursive;
+
+$primary-light-blue: #8DB9ED
+$primary-line-color: #1B3956
+$main-color: #285680
+
+body
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+
+
+.hidden
+	display: none
+
+section,
+.main_head
+	position: relative
+	h3
+		text-align: center
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 400
+//секции
+section
+	padding: 100px 0
+	overflow: hidden
+	h3
+		font-weight: 700
+		font-size: 16px
+	p
+		font-size: 16px
+	h2
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		margin: 5px
+		
+	.sections-title
+		text-align: center
+.wrapper_flex
+	display: flex
+	justify-content: center
+
+.sections-title
+	margin-bottom: 50px
+	font-family: 'Baloo Bhaina', cursive
+
+//анимация тайтлов секций
+.box
+	position: relative
+	display: inline-block
+	text-align: center
+	vertical-align: middle
+	color: #1B3956
+	transition: 0.5s
+	padding: 0 20px
+	border: 2px solid rgba($main-color, .2)
+	transition: 0.5s
+
+.box:hover
+	border: 2px solid rgba(0,160,80,0)
+	color: $main-color
+
+.box::before, .box::after
+	content: " "
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	box-sizing: border-box
+	transform: scale(0)
+	transition: 0.5s
+
+.bar::before
+	border-bottom: 3px solid $main-color
+	border-left: 3px solid $main-color
+	transform-origin: 100% 0%
+
+.bar::after
+	border-top: 3px solid $main-color
+	border-right: 3px solid $main-color
+	transform-origin: 0% 100%
+
+.box:hover::after,
+.box:hover::before
+	transform: scale(1)
+
+
+
+
+.main_head
+	min-height: 620px
+	padding-top: 20px
+//лоадер перед загрузкой сайта
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+//логотип в шапке
+.logo
+	float: left
+	z-index: 555
+svg
+	height: 90px
+	width: 90px
+	position: relative
+	z-index: 10
+//меню в шапке
+.toggle_menu
+	float: right
+	position: fixed
+	z-index: 100
+	border: none
+	border-radius: 20%
+	right: 10%
+	top: 30px
+
+[class^="line-"]
+	display: block
+	height: 7px
+	width: 50px
+	background: #285680
+	border-radius: 1px
+
+.burger-menu
+	display: inline-block
+	background: rgba(white, 0.5)
+	border: 1px solid rgba(black, .15)
+	padding: 9px
+	border-radius: 3px
+	transition: background .3s
+	text-align: center
+	&:hover
+		background: rgba(white, .9)
+		cursor: pointer
+ 
+	& .label
+		display: inline-block
+		font-size: 14px
+		line-height: 0
+		margin: 16px 0
+		letter-spacing: 0.15rem
+ 
+
+.burger-menu-clicked
+	.line-1
+		animation: menu-top .4s forwards ease-in-out
+ 
+	.line-3
+		animation: menu-bottom .4s forwards ease-in-out
+ 
+	.label
+		opacity: 0
+
+ 
+
+.burger-menu-closing
+	.line-1
+		animation: menu-top-reverse .5s forwards ease-in-out
+ 
+	.line-3
+		animation: menu-bottom-reverse .5s forwards ease-in-out
+ 
+	.label
+		transition: .5s
+		opacity: 1
+ 
+
+.main_menu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .7)
+	z-index: 20
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 150px
+		text-align: center
+		a
+			color: #fff
+			display: block
+			padding: 25px 0
+			text-transform: uppercase
+			letter-spacing: 5px
+			//шрифты
+		a:hover
+			color: #285680
+			background-color: rgba(255, 255, 255, .5)
+
+.wrapper_text
+	display: table
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index: 1
+	top: 0
+	left: 0
+	.table_row
+		display: table-row
+		.table_cell
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+.text
+	h1
+		display: inline-block
+		font-family: 'Griffy', cursive
+		font-size: 40px
+		padding: 15px 40px
+		color: #285680
+		text-transform: uppercase
+		animation-delay: 1s
+		margin: 0
+	p
+		color: #285680
+		margin-bottom: 20px
+		font-size: 17px
+		color: #1B3956
+		font-weight: 600
+
+
+.target,
+.contact
+	background-color: rgba(#285680, .3)
+
+.main_foot
+	padding: 80px 0
+	font-size: 15px
+
+.shia
+	text-align: center
+	img
+		max-width: 280px
+		display: inline-block
+		border-radius: 50%
+.content
+	p
+		margin-bottom: 20px
+
+
+
+//секция целей
+
+
+.target .col-md-6
+	text-align: center
+
+
+//секции фото
+
+.foto
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+		text-align: center
+	li
+		display: inline-block
+		margin: 0 20px
+		text-transform: uppercase
+		font-size: 15px
+		cursor: pointer
+		color: #285680
+		font-weight: bold
+		&.active
+			color: red
+			border-bottom: 2px solid red
+	ul
+		margin-bottom: 50px
+.foto_item
+	display: none
+	padding: 5px
+	img
+		width: 100%
+	.wrapper_items
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0, .8)
+		text-align: center
+		padding: 5% 0
+		color: #fff
+		opacity: 0
+		transition: all .7s
+		&:hover
+			opacity: 1
+			padding-top: 10%
+		h3
+			margin-bottom: 0
+
+		a
+			display: inline-block
+			background-color: transparent
+			border: 1px #fff solid
+			padding: 5px
+			font-weight: 700
+
+
+.win_popup
+	position: relative
+	background-color: #fff
+	margin: auto
+	max-width: 600px
+	img
+		max-width: 100%
+	p,h3
+		padding: 5px 5px 0px 5px
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		
+
+//секция контактов
+
+.contact_form, 
+.contact_form:before, 
+.contact_form:after
+	box-sizing: border-box 
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+form
+	max-width: 600px
+	text-align: center
+	margin: 20px auto
+	
+	input, textarea
+		border: 0
+		outline: 0
+		padding: 1em
+		border-radius: 8px
+		display: block
+		width: 100%
+		margin-top: 1em
+		box-shadow: 0 3px 3px rgba(black, 0.1)
+		resize: none
+		&:focus
+			box-shadow: 0 0px 2px rgba(red, 1)!important
+ 
+	.input_submit
+		color: white 
+		background: $main-color
+		cursor: pointer
+    
+
+	textarea
+		height: 169px
+
+.half
+	float: left
+	width: 48%
+	margin-bottom: 1em
+
+.right
+	width: 50%
+
+.left
+	margin-right: 2% 
+
+
+@media (max-width: 480px)
+	.half
+		width: 100% 
+		float: none
+		margin-bottom: 0 
+
+
+
+/* Clearfix */
+.contact_form:before,
+.contact_form:after
+	content: " " 
+	display: table 
+
+.contact_form:after
+	clear: both
+
+
+
+
+
+
+
+
+
+.generic-anchor
+	color: $primary-light-blue
+	&:visited
+		color: $primary-light-blue
+
+	&:hover
+		color: $primary-line-color
+
+.flex-rw
+	display: flex
+	flex-flow: row wrap
+
+
+footer
+	background: rgba(#1B3956, .9)
+	margin-top: auto
+	width: 100%
+
+.footer-list-top
+	padding: 0
+
+
+.footer-list-top > li
+	text-align: center
+	padding-bottom: 5px
+	list-style: none
+.footer-list-header
+	padding: 10px 0 5px 0
+	color: #fff
+.footer-list-anchor
+	font: 1.3em "Open Sans", sans-serif
+.footer-social-section
+	width: 100%
+	align-items: center
+	justify-content: space-around
+	position: relative
+	margin-top: 5px
+
+.footer-social-overlap
+	position: relative
+	z-index: 2
+	
+	padding: 0 20px
+
+
+.footer-social-overlap > a
+	font-size: 3em
+.footer-social-overlap > a:not(:first-child)
+	margin-left: 0.38em
+
+
+.footer-bottom-wrapper
+	font-size: 1.5em
+	color: #fff
+
+
+
+
+
+@keyframes menu-top
+	0%
+		transform: rotate(0deg) translateY(0px)
+	50%
+		transform: rotate(0deg) translateY(20px)
+	100%
+		transform: translateY(20px) rotate(45deg)
+ 
+
+@keyframes menu-top-reverse
+	0%
+		transform: translateY(20px) rotate(45deg)
+	50%
+		transform: rotate(0deg) translateY(20px)
+	100%
+		transform: translateY(0px) rotate(0deg)
+ 
+
+@keyframes menu-bottom
+	0%
+		transform: rotate(0deg) translateY(0px)
+	50%
+		transform: rotate(0deg) translateY(-19px)
+	100%
+		transform: translateY(-19px) rotate(-45deg)
+ 
+
+@keyframes menu-bottom-reverse
+	0%
+		transform: translateY(-19px) rotate(-45deg)
+	50%
+		transform: rotate(0deg) translateY(-19px)
+	100%
+		transform: translateY(0px) rotate(0deg)
+
